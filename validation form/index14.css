@@ -1,0 +1,147 @@
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+:root{
+--myfont : 'Mulish', sans-serif;
+--my-btn-font:'montserrat', sans-serif;
+--lg-lightcolor: linear-gradient(to left, rgba(116,235,213,0.6),rgba(159,172,230,0)) ;
+--lg-color: linear-gradient(to left, #74ebd5,#9face6);
+
+}
+body{
+    background-image: var(--lg-lightcolor),url(https://uni-span.com.au/wp-content/uploads/2018/02/2_Blog_UniSpan.jpeg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    font-family: var(--myfont);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100vw;
+}
+.container{
+    background-color: #fff;
+    border-radius: 10px;
+    -webkit-border-radius:10px;
+       overflow: hidden;
+    width: calc(100vw - 65vw);
+    max-width: 100%;
+
+}
+.header{
+    background: var(--lg-color);
+    padding: 30px 0;
+
+}
+.header h2{
+    color: #222;
+    font-family: var(--my-btn-font);
+    font-size: 24px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.form{
+    padding: 40px;
+}
+.form-control{
+    margin-bottom: 20px;
+    position: relative;
+
+}
+.form-control label{
+    display: inline-block;
+    margin-bottom: 5px ;
+}
+.form-control input{
+    width: 100%;
+    border: 2px solid #2f2f2f;
+    border-radius: 5px;
+    display: block;
+    font-family: var(--myfont);
+    padding: 12px;
+    font-size: 14px;
+
+}
+
+.form-control input:focus{
+    outline: 0;
+    border-color: rgb(215, 67, 67);
+
+}
+.form-control.success input{
+    border-color: green;
+
+}
+.form-control.error input{
+    border-color: red;
+    
+}
+.form-control.success i.fa-circle-check{
+    color: green;
+    visibility: visible;
+
+}
+.form-control.error i.fa-circle-exclamation{
+   color: red;
+    visibility: visible;
+    
+}
+
+
+
+
+.form-control i{
+position: absolute;
+right: 12px;
+top: 38px;
+visibility: hidden;
+
+
+}
+
+
+.form-control small{
+   position: absolute;
+   visibility: hidden;
+   left: 0;
+   color: red;
+}
+.form-control.error small{
+    visibility: visible;
+}
+
+
+
+.form .btn{
+    background: var(--lg-color);
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    color: #fff;
+    display: block;
+    font-family: var(--my-btn-font);
+    font-size: 16px;
+    padding: 15px 0;
+    margin-top: 20px ;
+    width: 100%;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 1s ease;
+
+
+}
+.form .btn:hover{
+    background: linear-gradient(to right,#74ebd5, #9face6);
+}
+@media(max-width:998px){
+.container{
+width: calc(100vw - 35vw);
+max-width: 100%;
+
+}
+} 
